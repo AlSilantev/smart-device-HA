@@ -12,11 +12,11 @@ const sprite = () =>
       .src('source/img/sprite/*.svg')
       .pipe(svgstore({inlineSvg: true}))
       .pipe(rename('sprite.svg'))
-      .pipe(gulp.dest('build/img'));
+      .pipe(gulp.dest('build/img/sprite'));
 
 const optimizeSvg = () =>
   gulp
-      .src('build/img/**/*.svg')
+      .src('build/img/svg/*.svg')
       .pipe(
           imagemin([
             svgo({

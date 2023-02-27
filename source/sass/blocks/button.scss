@@ -1,17 +1,15 @@
-.btn {
+.button {
   display: inline-flex;
   padding: 10px 20px;
 
   color: $color-default-white;
 
-  background-color: $color-neon-blue;
+  background-color: $primary-blue;
   border: none;
   cursor: pointer;
 
-  transition: opacity $trans-default;
-
-  &--red {
-    background-color: $color-torch-red;
+  &--transparent {
+    background-color: transparent;
   }
 
   &:disabled {
@@ -20,7 +18,7 @@
     pointer-events: none;
   }
 
-  @include hover-focus {
+  &:hover {
     opacity: 0.8;
   }
 }
