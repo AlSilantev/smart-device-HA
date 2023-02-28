@@ -1,0 +1,54 @@
+.main-logo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 215px;
+  margin-right: 160px;
+
+  font-family: $ff-roboto-condensed;
+  font-size: 25px;
+  line-height: 29px;
+  font-weight: 700;
+
+  align-items: center;
+
+  @include vp-769 {
+    &--header {
+      align-self: flex-end;
+      margin: 0;
+      height: 35px;
+
+      .main-logo__logo {
+        width: 35px;
+        height: 35px;
+        margin: 0;
+      }
+
+      .main-logo__logo-tagline {
+        display: none;
+      }
+    }
+  }
+}
+
+.main-logo__logo {
+  width: 55px;
+  height: 55px;
+  margin-right: 15px;
+}
+
+.main-logo__logo-tagline {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-logo p {
+  margin: 0 0 5px 0;
+}
+
+.main-logo span {
+  font-family: $ff-roboto;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  color: rgba($color: $primary-white, $alpha: 0.7);
+}

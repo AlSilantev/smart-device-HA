@@ -1,8 +1,8 @@
 .button {
   display: inline-flex;
-  padding: 10px 20px;
 
-  color: $color-default-white;
+  color: $primary-white;
+  text-transform: uppercase;
 
   background-color: $primary-blue;
   border: none;

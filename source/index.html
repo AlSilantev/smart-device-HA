@@ -15,49 +15,54 @@
     <div class="page-container">
       <header>
         <div class="header container">
-          <a class="header__logo-wrapper" href="#" aria-label="Логотип 'Смарт Девайс'">
-            <svg width="35" height="35" viewBox="0 0 35 35" fill="#00B2FF"xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="./img/sprite/stack.svg#cart-icon"></use>
+          <a class="header__logo-wrapper main-logo--header" href="#" aria-label="Логотип 'Смарт Девайс'">
+            <svg class="main-logo__logo main-logo" width="35" height="35" viewBox="0 0 35 35" fill="#00B2FF" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite/sprite.svg#logo"></use>
             </svg>
+
+            <div class="main-logo__logo-tagline">
+              <p>Smart Device</p>
+              <span>умные технологии</span>
+            </div>
+          </a>
+
+          <ul class="header__contacts-list">
+            <li class="header__contacts-item">
+              <a class="header__contact-link" href="mailto:info@sd.ru" aria-label="Свяжитесь с нами по почте.">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="#00B2FF" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite/sprite.svg#mail-icon"></use>
+                </svg>
+
+                <span>
+                  info@sd.ru
+                </span>
+              </a>
+            </li>
+
+            <li class="header__contacts-item">
+              <a class="header__contact-link" href="tel:+74950005252" aria-label="Позвоните нам.">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="#00B2FF" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite/sprite.svg#phone-call-icon"></use>
+                </svg>
+
+                <span>
+                  +7 (495) 000 52 52
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <a class="header__order-call-button button button--transparent" href="#">
+            Заказать звонок
           </a>
         </div>
       </header>
       <main>
       </main>
       <footer>
-        <div class="container"></div>
+        <div class="footer container container--footer"></div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
