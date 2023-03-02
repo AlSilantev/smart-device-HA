@@ -11,8 +11,17 @@
 
   align-items: center;
 
+  &--footer {
+    margin-bottom: 30px;
+
+    @include vp-1919 {
+      margin: 0;
+    }
+  }
+
   @include vp-769 {
     &--header {
+      width: min-content;
       align-self: flex-end;
       margin: 0;
       height: 35px;

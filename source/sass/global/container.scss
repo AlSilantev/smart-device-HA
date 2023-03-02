@@ -4,23 +4,23 @@
   margin: 0 auto;
   padding: 30px 410px 35px 350px;
 
-  &--footer {
-    padding: 50px 350px 55px;
-
-    @include vp-1919 {
-      padding: 50px 50px 65px;
-    }
-
-    @include vp-769 {
-      
-    }
-  }
-
   @include vp-1919 {
     padding: 20px 70px 25px 50px;
   }
 
   @include vp-769 {
     padding: 10px 35px 20px 26px;
+  }
+
+  &--footer {
+    padding: 50px 350px 55px;
+
+    @include vp-1919 {
+      padding: 50px 45px 65px 50px;
+    }
+
+    @include vp-769 {
+      padding: 35px 0;
+    }
   }
 }

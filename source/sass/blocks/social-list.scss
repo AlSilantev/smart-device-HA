@@ -1,0 +1,24 @@
+.social-list {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: 40px;
+  gap: 15px;
+  width: min-content;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+
+  list-style: none;
+
+  @include vp-1919 {
+    margin: 0;
+  }
+}
+
+.social-list a {
+  display: flex;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+}

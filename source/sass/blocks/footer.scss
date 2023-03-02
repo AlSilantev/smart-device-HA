@@ -1,0 +1,149 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+
+  line-height: 20px;
+
+  background-color: $primary-black;
+
+  @include vp-1919 {
+    gap: 40px 130px;
+  }
+
+  @include vp-769 {
+    gap: 0;
+  }
+}
+
+.footer__social-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include vp-1919 {
+    flex-direction: row;
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include vp-769 {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+}
+
+.footer__section-wrapper {
+  margin-top: 5px;
+
+  &--site-section {
+    width: 470px;
+    margin-right: 30px;
+
+    @include vp-1919 {
+      width: 220px;
+    }
+  }
+
+  @include vp-1919 {
+    margin: 0;
+  }
+
+  @include vp-769 {
+    width: 100%;
+
+    border-top: 1px solid rgba($color: $primary-white, $alpha: 0.7);
+
+    &:last-child {
+      border-bottom: 1px solid rgba($color: $primary-white, $alpha: 0.7);
+    }
+  }
+}
+
+.footer__list-wrapper {
+  margin-top: 5px;
+
+  @include vp-1919 {
+    margin: 0;
+  }
+
+  @include vp-769 {
+    display: none;
+    padding: 0 25px 20px;
+
+    &--accordion-active {
+      display: block;
+    }
+  }
+}
+
+.footer__list-wrapper--contacts-list {
+  width: 320px;
+
+  .footer__list,
+  .contacts-list__item {
+    width: 100%;
+  }
+
+  @include vp-769 {
+    width: 100%;
+  }
+}
+
+.footer__title {
+  margin: 0 0 24px;
+
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+
+  @include vp-1919 {
+    margin-bottom: 20px;
+  }
+
+  @include vp-769 {
+    padding: 20px 25px;
+    margin: 0;
+
+    background-image: url("../../img/svg/plus-icon.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 25px) 20px;
+
+    &--accordion-close {
+      background-image: url("../../img/svg/minus-icon.svg");
+    }
+  }
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  height: 130px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @include vp-1919 {
+    height: auto;
+  }
+}
+
+.footer__list li {
+  width: 220px;
+
+  @include vp-769 {
+    width: 100%;
+  }
+}
+
+.footer__list a {
+  color: rgba($color: #ffffff, $alpha: 0.7);
+}
