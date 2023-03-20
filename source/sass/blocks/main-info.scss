@@ -1,6 +1,5 @@
 .main-info {
-  position: relative;
-  top: -18px;
+  min-height: 880px;
 
   color: $font-color-white;
 
@@ -14,8 +13,9 @@
   }
 
   @include vp-1919 {
+    min-height: auto;
     background-image: url("../../img/main-background-tablet.jpg");
-    background-position: bottom 0 left -123px;
+    background-position: 24% 0;
     @include retina {
       background-image: url("../../img/main-background-tablet@2x.jpg");
     }
@@ -34,36 +34,39 @@
 .main-info__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 185px 475px 280px;
+  padding: 305px 475px 280px;
 
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
 
   @include vp-1919 {
-    padding: 80px 50px 205px;
+    padding: 98px 50px 205px;
   }
 
   @include vp-769 {
-    padding: 80px 25px 190px;
+    padding: 98px 25px 190px;
   }
 }
 
 .main-info__title {
-  margin: 0 0 40px;
+  margin: 0 0 32px;
 
   font-family: $ff-roboto-condensed;
   font-size: 80px;
   line-height: 94px;
   text-transform: uppercase;
+  letter-spacing: 0.07em;
 
   @include vp-1919 {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 
     font-size: 64px;
-    line-height: 75px;
+    line-height: 70px;
     letter-spacing: 0.07em;
   }
 
   @include vp-769 {
+    margin-bottom: 10px;
+
     font-size: 36px;
     line-height: 42px;
   }
@@ -71,14 +74,18 @@
 
 .main-info__text-wrapper {
   width: 685px;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 
   font-size: 22px;
   line-height: 34px;
 
+  @include vp-1919 {
+    margin-bottom: 58px;
+  }
+
   @include vp-769 {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
 
     font-size: 14px;
     line-height: 21px;
@@ -106,7 +113,14 @@
 
   justify-content: center;
 
+  @include vp-1919 {
+    margin-left: 45px;
+  }
+
   @include vp-769 {
+    margin: 0;
+    padding: 12px 25px;
+
     font-size: 14px;
     line-height: 16px;
   }

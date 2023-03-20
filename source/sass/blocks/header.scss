@@ -1,5 +1,5 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 2;
 
@@ -7,6 +7,10 @@
   flex-wrap: wrap;
 
   background: linear-gradient(180deg, $primary-black 84.9%, rgba($color: $primary-black, $alpha: 0) 100%);
+
+  @include vp-1919 {
+    position: relative;
+  }
 }
 
 .header__contacts-list {

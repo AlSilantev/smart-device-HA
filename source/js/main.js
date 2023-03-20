@@ -3,6 +3,8 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import './modules/accordion';
 import './modules/show-more-information';
+import './utils/modal-interaction';
+import './utils/phone-mask';
 
 // ---------------------------------
 

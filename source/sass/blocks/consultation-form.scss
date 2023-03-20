@@ -1,0 +1,231 @@
+.consultation-form__main-wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  padding: 170px 360px 250px 975px;
+
+  color: #ffffff;
+
+  background-color: $primary-blue;
+  background-image: url("../../img/svg/triangle-plug.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: url("../../img/svg/paper-airplane.svg");
+    background-repeat: no-repeat;
+    background-position: 350px 246px;
+
+    width: 50.52%;
+    height: 100%;
+
+    content: "";
+  }
+
+  @include vp-1919 {
+    padding: 50px 50px 125px;
+
+    background-image: none;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @include vp-769 {
+    padding: 50px 25px 88px;
+  }
+}
+
+.consultation-form__title {
+  margin: 0 0 15px;
+
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+
+  @include vp-1919 {
+    margin-bottom: 10px;
+  }
+
+  @include vp-769 {
+    margin-bottom: 11px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.consultation-form__subtitle {
+  margin: 0 0 35px 5px;
+
+  font-size: 16px;
+  line-height: 21px;
+
+  @include vp-1919 {
+    margin: 0 0 25px;
+  }
+
+  @include vp-769 {
+    margin-bottom: 34px;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.consultation-form__subtitle p {
+  margin: 0;
+}
+
+.consultation-form form {
+  width: calc(100% - 5px);
+  margin-left: 5px;
+
+  @include vp-1919 {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.consultation-form__form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px 30px;
+
+  @include vp-769 {
+    gap: 20px;
+  }
+}
+
+.consultation-form__field {
+  flex-grow: 1;
+
+  line-height: 20px;
+
+  &--user-question {
+    width: 100%;
+    margin-bottom: 10px;
+
+    @include vp-769 {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.consultation-form__field input,
+.consultation-form__field textarea {
+  width: 100%;
+}
+
+.consultation-form__field textarea {
+  height: 155px;
+
+  @include vp-769 {
+    height: 180px;
+  }
+}
+
+.consultation-form__submit-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 25px 50px;
+
+  text-align: start;
+  align-items: flex-end;
+
+  @include vp-1919 {
+    gap: 25px 85px;
+
+    align-items: center;
+  }
+
+  @include vp-769 {
+    gap: 24px;
+
+    justify-content: center;
+  }
+}
+
+.consultation-form__submit-button {
+  width: 265px;
+  padding: 15px 25px;
+
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.05em;
+
+  background-color: $primary-black;
+  border-radius: 3px;
+
+  align-items: center;
+  justify-content: center;
+
+  @include vp-769 {
+    width: 100%;
+  }
+}
+
+.consultation-form__confirmation-consent {
+  width: 265px;
+}
+
+// CHECKBOX
+.consultation-form__confirmation-consent {
+
+  @include vp-1919 {
+    justify-self: left;
+  }
+
+  label {
+    position: relative;
+
+    display: flex;
+    padding-left: 26px;
+
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba($color: #ffffff, $alpha: 0.8);
+
+    align-items: center;
+  }
+
+  .checkbox-mark {
+    position: absolute;
+    left: 0;
+
+    width: 15px;
+    height: 15px;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+  }
+
+  input:checked + .checkbox-mark::before {
+    $checked-mark-width: 9px;
+    $checked-mark-height: 6px;
+
+    position: absolute;
+    top: calc(50% - $checked-mark-height / 2);
+    left: calc(50% - $checked-mark-width / 2);
+
+    width: $checked-mark-width;
+    height: $checked-mark-height;
+
+    background-image: url("../../img/sprite/check-mark-icon.svg");
+
+    content: "";
+  }
+}

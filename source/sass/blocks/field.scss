@@ -1,0 +1,28 @@
+.field input,
+.field textarea {
+  padding: 15px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 3px;
+  background-color: rgba($color: $primary-black, $alpha: 0.15);
+
+  &::placeholder {
+    color: inherit;
+  }
+}
+
+.field textarea {
+  padding: 25px 15px;
+
+  @include vp-1919 {
+    padding: 35px 15px;
+  }
+
+  @include vp-769 {
+    padding: 25px 15px;
+  }
+}

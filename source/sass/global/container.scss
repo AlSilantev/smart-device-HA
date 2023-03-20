@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
   padding: 30px 410px 35px 350px;
 
@@ -13,6 +12,7 @@
   }
 
   &--footer {
+    flex-shrink: 0;
     padding: 50px 350px 55px;
 
     @include vp-1919 {
@@ -20,7 +20,7 @@
     }
 
     @include vp-769 {
-      padding: 35px 0;
+      padding: 40px 0;
     }
   }
 }

@@ -11,7 +11,7 @@
   }
 
   @include vp-769 {
-    padding: 60px 25px 25px;
+    padding: 50px 25px 25px;
   }
 }
 
@@ -75,6 +75,11 @@
     svg {
       fill: #f2f5f7;
     }
+
+    .advantages__item-title {
+      color: $primary-white;
+    }
+
   }
 
   @include vp-1919 {
@@ -88,6 +93,12 @@
 
 .advantages__item-wrapper svg {
   margin-bottom: 20px;
+
+  @include vp-769 {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 14px;
+  }
 }
 
 .advantages__item-title {
@@ -98,14 +109,17 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
+  color: $primary-blue;
 
   @include vp-1919 {
-    line-height: 24px;
+    margin-bottom: 12px;
+
+    line-height: 30px;
   }
 
   @include vp-769 {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 28px;
   }
 }
 

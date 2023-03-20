@@ -1,12 +1,24 @@
 .company-information {
   display: flex;
   flex-direction: row-reverse;
-  padding: 60px 350px 100px;
+  padding: 60px 350px 120px;
 
-  justify-content: space-between;
+  @media (min-width: $vp-770) {
+    background-image: url('../../img/2022.png');
+    background-repeat: no-repeat;
+    background-size: 150px 320px;
+    background-position: 350px 60px;
+
+    justify-content: center;
+
+    @include retina {
+      background-image: url("../../img/2022@2x.png");
+    }
+  }
 
   @include vp-1919 {
-    padding: 50px 48px 80px;
+    padding: 40px 48px 80px;
+    background-position: 44px 42px;
   }
 
   @include vp-769 {
@@ -14,20 +26,16 @@
   }
 }
 
-.company-information__image-wrapper {
-  width: 150px;
-  height: 320px;
-
-  @include vp-769 {
-    display: none;
-  }
-}
-
 .company-information__company-description {
-  width: 970px;
+  width: 100%;
+  padding-left: 250px;
 
   @include vp-1919 {
-    width: 495px;
+    padding-left: 179px;
+  }
+
+  @include vp-769 {
+    padding: 0;
   }
 }
 
@@ -47,8 +55,7 @@
 }
 
 .company-information__description-wrapper {
-  padding-bottom: 20px;
-
+  margin-bottom: 40px;
   line-height: 22px;
 
   &--more-information-closed {
@@ -63,15 +70,25 @@
     }
   }
 
+  @include vp-1919 {
+    margin-bottom: 0;
+  }
+
   @include vp-769 {
+    margin-bottom: -5px;
+
     font-size: 14px;
-    line-height: 18px;
+    line-height: 19px;
   }
 }
 
 .company-information__description-wrapper p {
   margin-top: 0;
   margin-bottom: 22px;
+
+  @include vp-1919 {
+    margin-bottom: 18px;
+  }
 
   @include vp-769 {
     margin-bottom: 18px;
@@ -96,6 +113,6 @@
 
   @include vp-769 {
     width: 160px;
-    padding: 10px 15px;
+    padding: 8px 15px;
   }
 }
