@@ -186,15 +186,15 @@
         </section>
 
         <section class="services">
-          <h2 class="services__title">
-            <span class="services__title services__title--vp-min-770px">
+          <div class="services__title-wrapper">
+            <h2 class="services__title services__title--vp-min-770px">
               Smart Device предлагает следующие товары и&nbsp;услуги
-            </span>
+            </h2>
 
-            <span class="services__title services__title--vp-max-769px">
+            <h2 class="services__title services__title--vp-max-769px">
               Товары и&nbsp;услуги Smart&nbsp;Device
-            </span>
-          </h2>
+            </h2>
+          </div>
 
           <ul class="services__list">
             <li class="services__item">
@@ -256,20 +256,38 @@
             <form class="consultation-form__form" method="post" action="https://echo.htmlacademy.ru/">
               <div class="consultation-form__form-wrapper">
                 <div class="consultation-form__field consultation-form__field--user-name field">
-                  <label aria-label="Введите ваше Имя.">
-                    <input name="user-name" type="text" placeholder="Имя" required>
+                  <label>
+                    <input
+                      aria-label="Введите ваше Имя."
+                      name="user-name"
+                      type="text"
+                      placeholder="Имя"
+                      required
+                    >
                   </label>
                 </div>
 
                 <div class="consultation-form__field consultation-form__field--phone-number field">
-                  <label aria-label="Введите ваш номер телефона.">
-                    <input name="user-phone-number" type="tel" placeholder="Телефон" required>
+                  <label>
+                    <input
+                      aria-label="Введите ваш номер телефона."
+                      name="user-phone-number"
+                      type="tel"
+                      placeholder="Телефон"
+                      required
+                    >
                   </label>
                 </div>
 
                 <div class="consultation-form__field consultation-form__field--user-question field">
-                  <label aria-label="Введите ваш вопрос.">
-                    <textarea placeholder="Ваш вопрос" name="user-question" rows="5"></textarea>
+                  <label>
+                    <textarea
+                      aria-label="Введите ваш вопрос."
+                      name="user-question"
+                      placeholder="Ваш вопрос"
+                      rows="5"
+                    >
+                    </textarea>
                   </label>
                 </div>
 
@@ -445,23 +463,44 @@
           </p>
         </div>
 
-        <form class="consultation-form__form" method="post" action="https://echo.htmlacademy.ru/" name="consultationForm">
+        <form class="consultation-form__form" id="consultationForm" data-open-modal method="post" action="https://echo.htmlacademy.ru/" name="consultationForm">
           <div class="consultation-form__form-wrapper">
             <div class="consultation-form__field consultation-form__field--user-name field">
-              <label aria-label="Введите ваше Имя.">
-                <input name="userName" type="text" placeholder="Имя" required autofocus>
+              <label>
+                <input
+                  aria-label="Введите ваше Имя."
+                  name="userName"
+                  type="text"
+                  placeholder="Имя"
+                  required
+                  autofocus
+                >
               </label>
             </div>
 
             <div class="consultation-form__field consultation-form__field--phone-number field">
-              <label aria-label="Введите ваш номер телефона.">
-                <input name="userPhoneNumber" type="tel" placeholder="Телефон" data-phone-pattern required max="11">
+              <label>
+                <input
+                  aria-label="Введите ваш номер телефона."
+                  name="userPhoneNumber"
+                  type="tel"
+                  placeholder="Телефон"
+                  data-phone-pattern
+                  id="userPhoneNumber"
+                  required
+                >
               </label>
             </div>
 
             <div class="consultation-form__field consultation-form__field--user-question field">
-              <label aria-label="Введите ваш вопрос.">
-                <textarea placeholder="Ваш вопрос" name="userQuestion" rows="5"></textarea>
+              <label>
+                <textarea
+                  aria-label="Введите ваш вопрос."
+                  placeholder="Ваш вопрос"
+                  name="userQuestion"
+                  rows="5"
+                >
+                </textarea>
               </label>
             </div>
 

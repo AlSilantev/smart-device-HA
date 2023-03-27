@@ -64,7 +64,15 @@
   }
 
   svg {
+    margin-bottom: 20px;
+
     fill: $primary-blue;
+
+    @include vp-769 {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 14px;
+    }
   }
 
   @include hover-focus {
@@ -79,7 +87,6 @@
     .advantages__item-title {
       color: $primary-white;
     }
-
   }
 
   @include vp-1919 {
@@ -88,16 +95,6 @@
 
   @include vp-769 {
     padding: 30px 30px 35px;
-  }
-}
-
-.advantages__item-wrapper svg {
-  margin-bottom: 20px;
-
-  @include vp-769 {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 14px;
   }
 }
 

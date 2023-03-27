@@ -13,13 +13,16 @@
 
   justify-content: center;
   align-items: center;
+
+  &--is-active {
+    display: flex;
+  }
 }
 
 .modal-container__modal {
   position: relative;
   z-index: 5;
 
-  display: none;
   flex-direction: column;
   width: 500px;
   height: min-content;
@@ -35,6 +38,7 @@
   justify-content: center;
   -ms-overflow-style: none;
   scrollbar-width: none;
+
   &::-webkit-scrollbar {
     display: none;
   }

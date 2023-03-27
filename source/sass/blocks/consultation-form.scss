@@ -180,11 +180,8 @@
 
 .consultation-form__confirmation-consent {
   width: 265px;
-}
 
-// CHECKBOX
-.consultation-form__confirmation-consent {
-
+  // CHECKBOX
   @include vp-1919 {
     justify-self: left;
   }
@@ -209,7 +206,7 @@
     width: 15px;
     height: 15px;
 
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
     border-radius: 2px;
   }
 

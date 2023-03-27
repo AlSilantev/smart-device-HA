@@ -1,10 +1,12 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {initPhoneInput} from './modules/form-validate/init-phone-input';
 import './modules/accordion';
 import './modules/show-more-information';
 import './utils/modal-interaction';
-import './utils/phone-mask';
+
+const consultationForm = document.querySelector('#consultationForm');
 
 // ---------------------------------
 
@@ -25,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initPhoneInput(consultationForm);
   });
 });
 

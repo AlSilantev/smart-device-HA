@@ -1,3 +1,9 @@
+.modal {
+  &--is-active {
+    display: flex;
+  }
+}
+
 .modal__title {
   max-width: 80%;
   margin: 0 0 15px;

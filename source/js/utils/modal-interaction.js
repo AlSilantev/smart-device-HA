@@ -1,7 +1,7 @@
 export const openModal = (modalContainer, modal, openModalButton, autofocus = '') => {
   openModalButton.addEventListener('click', () => {
-    modalContainer.style.display = 'flex';
-    modal.style.display = 'flex';
+    modalContainer.classList.add('modal-container--is-active');
+    modal.classList.add('modal--is-active');
     if (autofocus) {
       autofocus.focus();
     }
@@ -25,5 +25,3 @@ if (openModalButton) {
   openModal(modalContainer, modal, openModalButton, autofocusField);
   closeModal(modalContainer, modal, closeModalButton);
 }
-
-

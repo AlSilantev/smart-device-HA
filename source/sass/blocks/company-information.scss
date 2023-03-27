@@ -4,7 +4,7 @@
   padding: 60px 350px 120px;
 
   @media (min-width: $vp-770) {
-    background-image: url('../../img/2022.png');
+    background-image: url("../../img/2022.png");
     background-repeat: no-repeat;
     background-size: 150px 320px;
     background-position: 350px 60px;
@@ -60,7 +60,7 @@
 
   &--more-information-closed {
     p:not(:nth-child(-n + 2)) {
-        display: none;
+      display: none;
     }
 
     @include vp-769 {

@@ -16,6 +16,7 @@
     min-height: auto;
     background-image: url("../../img/main-background-tablet.jpg");
     background-position: 24% 0;
+
     @include retina {
       background-image: url("../../img/main-background-tablet@2x.jpg");
     }
@@ -113,20 +114,6 @@
 
   justify-content: center;
 
-  @include vp-1919 {
-    margin-left: 45px;
-  }
-
-  @include vp-769 {
-    margin: 0;
-    padding: 12px 25px;
-
-    font-size: 14px;
-    line-height: 16px;
-  }
-}
-
-.main-info__consultation-button {
   .vp-max-769 {
     display: none;
   }
@@ -139,5 +126,17 @@
     .vp-max-769 {
       display: inline;
     }
+  }
+
+  @include vp-1919 {
+    margin-left: 45px;
+  }
+
+  @include vp-769 {
+    margin: 0;
+    padding: 12px 25px;
+
+    font-size: 14px;
+    line-height: 16px;
   }
 }
