@@ -80,15 +80,15 @@
   background-image: url("../../img/card-background.jpg");
   background-repeat: no-repeat;
 
-  &:nth-child(1) {
+  &:nth-child(1n) {
     background-position: -190px;
   }
 
-  &:nth-child(2) {
+  &:nth-child(2n) {
     background-position: -540px;
   }
 
-  &:nth-child(3) {
+  &:nth-child(3n) {
     background-position: -890px;
   }
 
@@ -129,7 +129,7 @@
   }
 }
 
-.services__item-link {
+.services__item a {
   display: block;
 
   width: 100%;
