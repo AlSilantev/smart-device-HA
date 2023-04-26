@@ -98,7 +98,7 @@
   }
 }
 
-.advantages__item-title {
+.advantages h3 {
   margin: 0;
   margin-bottom: 15px;
 
@@ -127,5 +127,10 @@
   @include vp-769 {
     font-size: 14px;
     line-height: 19px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
   }
 }
